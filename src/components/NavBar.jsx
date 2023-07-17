@@ -8,10 +8,15 @@ import {
 } from "@mui/material";
 export default function NavBar() {
   return (
-    <AppBar color='secondary'>
+    <AppBar sx={{ bgcolor: "black" }}>
       <List
         component='nav'
-        sx={{ display: "flex", justifyContent: "end", p: "6px" }}
+        sx={{
+          display: "flex",
+          mx: 1,
+          justifyContent: "space-between",
+          p: "6px",
+        }}
       >
         <ListItem sx={{ p: 0 }}>
           <ListItemText>JSOM</ListItemText>
