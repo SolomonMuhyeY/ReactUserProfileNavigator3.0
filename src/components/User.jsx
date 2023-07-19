@@ -6,23 +6,23 @@ export default function User({ client }) {
   return (
     <Box
       sx={{
-        borderRadius: "10px",
+        borderRadius: "5px",
         py: "0.5rem",
         px: "0.85rem",
         my: "16px",
-        mx: "auto",
+        mx: "14px",
         textAlign: "center",
         boxShadow: "2px 0 1px 0 #ddd, -2px 0 1px 0 #ddd, 0 2px 1px 0 #ddd",
         ":hover": {
-          scale: "1.05",
+          scale: "1.035",
           transition: "ease-in-out",
-          transitionDuration: "2000ms",
+          transitionDuration: "1400ms",
         },
       }}
     >
       <img src={client.img} />
       <Typography
-        variant='h6'
+        variant='body1'
         sx={{ fontStyle: "italic", fontWeight: "bolder" }}
       >
         {client.name}
@@ -35,6 +35,7 @@ export default function User({ client }) {
             py: "3px",
             px: "5px",
             fontSize: "small",
+            fontWeight: "bold",
             wordSpacing: "-2px",
             borderRadius: "5px",
             ":hover": {
@@ -45,7 +46,6 @@ export default function User({ client }) {
             transition: "ease-in-out",
             my: "0.56rem",
           }}
-          className='bg-blue-600 p-1 my-3 rounded transition duration-1000 ease  hover:bg-blue-500'
         >
           {client.btnMsg}
         </Button>

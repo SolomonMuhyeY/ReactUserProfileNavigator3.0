@@ -15,7 +15,7 @@ function UserDescription() {
     return <div>User not found</div>;
   }
   return (
-    <Container>
+    <Container variant='div'>
       <img src={user.img} alt={user.name} />
       <Typography
         variant='h5'
